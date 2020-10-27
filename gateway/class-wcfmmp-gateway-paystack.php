@@ -80,7 +80,7 @@ class WCFMmp_Gateway_Paystack extends WCFMmp_Abstract_Gateway {
 	public function process_payment( $withdrawal_id, $vendor_id, $withdraw_amount, $withdraw_charges, $transaction_mode = 'auto' ) {
 
 		$this->withdrawal_id 	= $withdrawal_id;
-		$this->withdraw_amount	= intval( $withdraw_amount * 100 ); // convert NGN to kobo i.e. 1 NGN = 100 kobo
+		$this->withdraw_amount	= intval( $withdraw_amount * 100 ); // convert GHS to pesewas i.e. 1 GHS = 100 pesewas
 		$this->withdraw_charges	= $withdraw_charges;
 		$this->transaction_mode	= $transaction_mode;
 		$this->vendor_id		= $vendor_id;
